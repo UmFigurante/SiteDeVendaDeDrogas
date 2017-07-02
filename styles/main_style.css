@@ -36,15 +36,15 @@ div#invisible {
 	position: relative;
 }
 
-div#header > h1, h2 {
+h1, h2 {
 	font-family: 'Racing Sans One', cursive;
 	color: black;
 }
 
-div#content > div.box {
+/* CONTEUDO */
+div#content div.box {
 	border-radius: 20px;
 	background-color: white;
-	box-shadow: 2px 2px 2px white;
 	position: relative;
 
 	font-size: 18px; 	
@@ -61,6 +61,24 @@ div#content > div.box {
 	float: left;
 } 
 
+div#content div.box > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: static;
+    width: 20em;
+    height: 14em;
+}
+
+div#content div.box > h1, h2, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+span.sub_msg {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
 /* MENU */
 
 div#menu {
@@ -75,6 +93,8 @@ div#menu {
 	right: -11em;
 	width: 12em;
 	height: 100%;
+    
+    border-left: 1px solid black;
 
 	transition: right 0.9s;
 }
@@ -88,6 +108,7 @@ div#menu > ul > a > li:hover {
 }
 
 div#menu > ul > a > li {
+    border-bottom: 1px solid black;
 	transition: background 0.2s;
 }
 
@@ -100,6 +121,7 @@ a{
 ul {
 	list-style-type: none;
 	padding: 0px;
+    margin-top: 0px;
 }
 
 ul > li {
