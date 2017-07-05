@@ -13,7 +13,7 @@ body {
 
 /* CABEÇALHO */
 div#header {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: 8em;
 
@@ -79,8 +79,47 @@ span.sub_msg {
     text-decoration: underline;
 }
 
-/* MENU */
+/* CONTEUDO DESCRITIVO */
+div#content div.box#descriptor {
+    width: 40em;
+    height: auto;
+}
 
+div#content div.box#descriptor img#product {
+    width: 30em;
+    height: 20em;
+    border-radius: 20px;
+}
+
+div#content div.box#descriptor div#description {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+div#recomendation {
+    border-radius: 20px;
+    background: linear-gradient(green, lightgreen);
+    margin: 1em;
+}
+
+div#warning {
+    border-radius: 20px;
+    background: linear-gradient(red, lightcoral);
+    margin: 1em;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 10em;
+    height: 2em;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 24px;
+}
+
+/* FORMULARIOS */
+
+/* MENU */
 div#menu {
 	background-color: #7f7f7f;
 	
@@ -92,7 +131,7 @@ div#menu {
 	top: 192px;
 	right: -11em;
 	width: 12em;
-	height: 100%;
+	
     
     border-left: 1px solid black;
 
@@ -122,6 +161,7 @@ ul {
 	list-style-type: none;
 	padding: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 ul > li {
